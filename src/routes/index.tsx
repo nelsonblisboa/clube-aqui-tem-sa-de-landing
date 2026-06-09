@@ -88,14 +88,14 @@ const benefits = [
   },
   {
     icon: ShieldCheck,
-    title: "Parceria com a Porto Seguro",
-    desc: "Plataforma e cobertura operadas por quem entende de saúde há décadas.",
+    title: "Porto Seguro + Horizon",
+    desc: "Operado pela Porto Seguro em parceria com a Horizon Corretora — décadas de experiência cuidando de você.",
   },
 ];
 
 const howSteps = [
   { n: "01", title: "Assine o Clube", desc: "Cadastro 100% online em poucos minutos no cartão de crédito." },
-  { n: "02", title: "Receba seu acesso", desc: "Login imediato na plataforma Porto Seguro VidaClass." },
+  { n: "02", title: "Receba seu acesso", desc: "Login imediato na plataforma de telemedicina da Porto Seguro." },
   { n: "03", title: "Agende sua consulta", desc: "Escolha a especialidade, o dia e o horário que preferir." },
   { n: "04", title: "Seja atendido", desc: "Consulta por vídeo ou telefone com prescrição digital válida." },
 ];
@@ -124,8 +124,9 @@ function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a href="#top" className="flex items-center gap-2">
           <img src={logoAsset.url} alt="Clube Aqui Tem Saúde" className="h-10 w-auto" />
-          <span className="hidden text-sm font-semibold text-primary sm:inline">
-            Aqui Tem <span className="text-accent">Saúde</span>
+          <span className="hidden text-sm font-bold leading-tight text-primary sm:flex sm:flex-col">
+            <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Clube</span>
+            <span>Aqui Tem <span className="text-accent">Saúde</span></span>
           </span>
         </a>
         <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
@@ -151,19 +152,22 @@ function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent">
-            <HeartPulse className="h-3.5 w-3.5" /> Telemedicina por assinatura
+            <HeartPulse className="h-3.5 w-3.5" /> Clube Aqui Tem Saúde
           </span>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-balance text-primary-dark sm:text-5xl md:text-6xl">
-            Saúde para toda família por{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10 text-accent">R$ 29,90</span>
-              <span className="absolute bottom-1 left-0 right-0 -z-0 h-3 bg-accent/15"></span>
-            </span>{" "}
-            por mês.
+            <span className="block text-primary">Clube Aqui Tem Saúde</span>
+            <span className="mt-2 block text-2xl font-semibold text-muted-foreground sm:text-3xl">
+              Telemedicina para o titular por apenas{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 text-accent">R$ 29,90/mês</span>
+                <span className="absolute bottom-1 left-0 right-0 -z-0 h-3 bg-accent/15"></span>
+              </span>
+            </span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Consultas online ilimitadas com clínico geral e 11 especialidades.
-            Inclua até 2 dependentes sem custo adicional. Sem carência, sem fidelidade.
+            Consultas online ilimitadas com clínico geral e 11 especialidades para o
+            titular. Quer cobrir toda a família? O <strong className="text-primary-dark">Plano Família</strong> sai por
+            apenas <strong className="text-accent">R$ 59,80/mês</strong> (2 titulares + até 2 dependentes).
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -301,7 +305,7 @@ function Pricing() {
     "Atendimento 24 horas, todos os dias",
     "Até 2 dependentes inclusos (clínico geral)",
     "Prescrição e atestados digitais válidos",
-    "Plataforma Porto Seguro VidaClass",
+    "Plataforma de telemedicina Porto Seguro",
     "Sem carência e sem fidelidade",
     "Cancele quando quiser, direto pelo app",
   ];
