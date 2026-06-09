@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Clube Aqui Tem Saúde" },
+      { name: "description", content: "Clube Aqui Tem Saúde offers affordable monthly telemedicine access for individuals and families." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Clube Aqui Tem Saúde" },
+      { property: "og:description", content: "Clube Aqui Tem Saúde offers affordable monthly telemedicine access for individuals and families." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Clube Aqui Tem Saúde" },
+      { name: "twitter:description", content: "Clube Aqui Tem Saúde offers affordable monthly telemedicine access for individuals and families." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07b2a511-ace4-4f01-9bf7-0c00f193a8cd/id-preview-44928bf2--e3bfde92-cdbf-4b62-8f96-bfd5776086a7.lovable.app-1781024318223.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07b2a511-ace4-4f01-9bf7-0c00f193a8cd/id-preview-44928bf2--e3bfde92-cdbf-4b62-8f96-bfd5776086a7.lovable.app-1781024318223.png" },
     ],
     links: [
       {
