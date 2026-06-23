@@ -110,7 +110,7 @@ function LandingPage() {
       <Specialties />
       <Pricing />
       <HowItWorks />
-      <FamilyExample />
+      
       <FAQ />
       <FinalCTA />
       <Footer />
