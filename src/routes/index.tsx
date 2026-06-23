@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Telemedicina ilimitada para você e até 2 dependentes. 11 especialidades, atendimento 24h, sem carência.",
+          "Telemedicina ilimitada para você e até 2 dependentes. 11 especialidades, atendimento 24h, carência de apenas 30 dias.",
       },
     ],
   }),
@@ -78,8 +78,8 @@ const benefits = [
   },
   {
     icon: ShieldCheck,
-    title: "Sem carência",
-    desc: "Comece a usar logo após a assinatura. Nada de meses esperando para se cuidar.",
+    title: "Carência de apenas 30 dias",
+    desc: "Após 30 dias da assinatura, seu acesso completo está liberado para você cuidar da saúde de toda a família.",
   },
   {
     icon: CreditCard,
@@ -169,6 +169,12 @@ function Hero() {
             titular. Quer cobrir toda a família? O <strong className="text-primary-dark">Plano Família</strong> sai por
             apenas <strong className="text-accent">R$ 59,80/mês</strong> (2 titulares + até 2 dependentes).
           </p>
+          <div className="mt-6 inline-flex items-center gap-3 rounded-2xl border-2 border-accent/40 bg-accent/10 px-5 py-3 shadow-accent">
+            <Clock className="h-6 w-6 shrink-0 text-accent" />
+            <p className="text-sm font-semibold text-primary-dark sm:text-base">
+              <span className="text-accent">Carência de apenas 30 dias</span> — depois disso, atendimento liberado para toda a família.
+            </p>
+          </div>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#adquirir"
@@ -184,7 +190,7 @@ function Hero() {
             </a>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
-            {["Sem carência", "Cancele quando quiser", "Atendimento 24h"].map((t) => (
+            {["Carência de 30 dias", "Cancele quando quiser", "Atendimento 24h"].map((t) => (
               <div key={t} className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" /> {t}
               </div>
@@ -306,7 +312,7 @@ function Pricing() {
     "Até 2 dependentes inclusos (clínico geral)",
     "Prescrição e atestados digitais válidos",
     "Plataforma de telemedicina Porto Seguro",
-    "Sem carência e sem fidelidade",
+    "Carência de apenas 30 dias e sem fidelidade",
     "Cancele quando quiser, direto pelo app",
   ];
 
@@ -315,7 +321,7 @@ function Pricing() {
       <SectionHeader
         eyebrow="Planos Clube Aqui Tem Saúde"
         title="Escolha o plano ideal para você"
-        desc="Dois planos simples, sem carência e sem fidelidade. Cancele quando quiser."
+        desc="Dois planos simples, com carência de apenas 30 dias e sem fidelidade. Cancele quando quiser."
       />
       <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
         {/* Plano Individual */}
@@ -338,7 +344,7 @@ function Pricing() {
                 "Consultas ilimitadas por vídeo ou telefone",
                 "Atendimento 24h, todos os dias",
                 "Prescrição e atestados digitais válidos",
-                "Sem carência e sem fidelidade",
+                "Carência de apenas 30 dias",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
@@ -380,7 +386,7 @@ function Pricing() {
                 "Até 2 dependentes inclusos (clínico geral)",
                 "Cobertura para até 4 pessoas da família",
                 "Atendimento 24h para toda a família",
-                "Sem carência e sem fidelidade",
+                "Carência de apenas 30 dias",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
@@ -489,8 +495,8 @@ const faqs = [
     a: "Sim. Todas as consultas são realizadas por médicos formados e registrados no CRM, através da plataforma de telemedicina da Porto Seguro.",
   },
   {
-    q: "Tem carência para começar a usar?",
-    a: "Não. Após a confirmação do pagamento, seu acesso é liberado e você já pode agendar consultas imediatamente.",
+    q: "Qual é o prazo de carência?",
+    a: "A carência é de apenas 30 dias a partir da confirmação do pagamento. Após esse período, você e seus dependentes têm acesso liberado a todas as consultas e especialidades.",
   },
   {
     q: "As receitas e atestados são válidos?",
