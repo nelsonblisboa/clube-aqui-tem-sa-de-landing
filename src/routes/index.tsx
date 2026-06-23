@@ -165,9 +165,8 @@ function Hero() {
             </span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Consultas online ilimitadas com clínico geral e 11 especialidades para o
-            titular. Quer cobrir toda a família? O <strong className="text-primary-dark">Plano Família</strong> sai por
-            apenas <strong className="text-accent">R$ 59,80/mês</strong> (2 titulares + até 2 dependentes).
+            Consultas online ilimitadas com clínico geral e <strong className="text-primary-dark">11 especialidades médicas</strong> para o
+            titular, por apenas <strong className="text-accent">R$ 29,90/mês</strong>. Sem complicação, sem fidelidade.
           </p>
           <div className="mt-6 inline-flex items-center gap-3 rounded-2xl border-2 border-accent/40 bg-accent/10 px-5 py-3 shadow-accent">
             <Clock className="h-6 w-6 shrink-0 text-accent" />
