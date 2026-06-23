@@ -338,7 +338,7 @@ function Pricing() {
                 "Consultas ilimitadas por vídeo ou telefone",
                 "Atendimento 24h, todos os dias",
                 "Prescrição e atestados digitais válidos",
-                "Sem carência e sem fidelidade",
+                "Carência de apenas 30 dias",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
