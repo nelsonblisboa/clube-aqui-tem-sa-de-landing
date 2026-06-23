@@ -382,62 +382,6 @@ function HowItWorks() {
   );
 }
 
-function FamilyExample() {
-  return (
-    <section className="mx-auto max-w-6xl px-4 py-20">
-      <div className="grid items-center gap-12 md:grid-cols-2">
-        <div className="relative">
-          <img
-            src={familyImg}
-            alt="Família usando o Clube Aqui Tem Saúde"
-            width={1280}
-            height={960}
-            loading="lazy"
-            className="rounded-3xl shadow-card"
-          />
-          <div className="absolute -bottom-6 right-6 rounded-2xl bg-accent p-5 text-accent-foreground shadow-accent">
-            <p className="text-xs font-semibold uppercase opacity-80">Custo por pessoa</p>
-            <p className="text-3xl font-bold">R$ 14,95</p>
-            <p className="text-xs opacity-80">por mês</p>
-          </div>
-        </div>
-        <div>
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">Exemplo prático</span>
-          <h2 className="mt-3 text-3xl font-bold text-balance text-primary-dark sm:text-4xl">
-            Família completa por menos de R$ 60 por mês
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Com dois titulares, você cobre até 4 pessoas — pai, mãe e dois filhos — com
-            atendimento médico online sempre que precisar.
-          </p>
-          <div className="mt-6 overflow-hidden rounded-2xl border border-border">
-            {[
-              ["Pai — titular", "Clínico + 11 especialidades", "R$ 29,90"],
-              ["Mãe — titular", "Clínico + 11 especialidades", "R$ 29,90"],
-              ["Filho — dependente", "Apenas clínico geral", "Grátis"],
-              ["Filho — dependente", "Apenas clínico geral", "Grátis"],
-            ].map(([who, what, price], i) => (
-              <div
-                key={who}
-                className={`grid grid-cols-[1.2fr_1.4fr_auto] gap-4 px-5 py-3 text-sm ${
-                  i % 2 ? "bg-secondary/40" : "bg-card"
-                }`}
-              >
-                <span className="font-semibold text-primary-dark">{who}</span>
-                <span className="text-muted-foreground">{what}</span>
-                <span className="font-bold text-accent">{price}</span>
-              </div>
-            ))}
-            <div className="flex items-center justify-between bg-primary px-5 py-4 text-primary-foreground">
-              <span className="font-bold">Total para a família</span>
-              <span className="text-xl font-bold">R$ 59,80/mês</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 const faqs = [
   {
