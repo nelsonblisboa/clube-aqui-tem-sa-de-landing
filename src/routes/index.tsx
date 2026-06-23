@@ -108,6 +108,7 @@ function LandingPage() {
       <PartnersBar />
       <Benefits />
       <Specialties />
+      <BonusVantagens />
       <Pricing />
       <HowItWorks />
       
