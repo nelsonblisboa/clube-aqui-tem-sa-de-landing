@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Telemedicina ilimitada para você e até 2 dependentes. 11 especialidades, atendimento 24h, sem carência.",
+          "Telemedicina ilimitada para você e até 2 dependentes. 11 especialidades, atendimento 24h, carência de apenas 30 dias.",
       },
     ],
   }),
