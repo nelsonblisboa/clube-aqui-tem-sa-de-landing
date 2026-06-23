@@ -315,7 +315,7 @@ function Pricing() {
       <SectionHeader
         eyebrow="Planos Clube Aqui Tem Saúde"
         title="Escolha o plano ideal para você"
-        desc="Dois planos simples, sem carência e sem fidelidade. Cancele quando quiser."
+        desc="Dois planos simples, com carência de apenas 30 dias e sem fidelidade. Cancele quando quiser."
       />
       <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
         {/* Plano Individual */}
