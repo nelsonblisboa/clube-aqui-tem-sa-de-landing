@@ -448,8 +448,8 @@ function FinalCTA() {
             Comece a cuidar da sua saúde hoje mesmo
           </h2>
           <p className="mx-auto mt-3 max-w-xl opacity-90">
-            <strong>Plano Individual</strong> por R$ 29,90/mês (apenas titular) ou{" "}
-            <strong>Plano Família</strong> por R$ 59,80/mês para até 4 pessoas.
+            Telemedicina ilimitada com clínico geral e 11 especialidades por apenas{" "}
+            <strong className="text-accent">R$ 29,90/mês</strong>.
           </p>
           <a
             href="#adquirir"
