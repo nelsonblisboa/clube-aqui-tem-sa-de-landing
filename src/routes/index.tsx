@@ -171,7 +171,7 @@ function Hero() {
           <div className="mt-6 inline-flex items-center gap-3 rounded-2xl border-2 border-accent/40 bg-accent/10 px-5 py-3 shadow-accent">
             <Clock className="h-6 w-6 shrink-0 text-accent" />
             <p className="text-sm font-semibold text-primary-dark sm:text-base">
-              <span className="text-accent">Carência de apenas 30 dias</span> — depois disso, atendimento liberado para toda a família.
+              <span className="text-accent">Carência de apenas 30 dias</span> — depois disso, acesso liberado a todas as consultas.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-4">
