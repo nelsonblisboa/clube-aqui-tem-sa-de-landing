@@ -401,8 +401,8 @@ const faqs = [
     a: "Sim, sem multa e sem fidelidade. O cancelamento pode ser solicitado quando você quiser.",
   },
   {
-    q: "Como funcionam os dependentes?",
-    a: "Cada titular pode incluir até 2 dependentes gratuitamente. Os dependentes têm acesso a consultas com clínico geral.",
+    q: "Quais especialidades estão incluídas?",
+    a: "Clínica Médica, Pediatria, Geriatria, Psiquiatria, Dermatologia, Medicina da Família, Endocrinologia, Ginecologia, Gastroenterologia, Otorrinolaringologia, Neurologia e Cardiologia.",
   },
   {
     q: "Onde será feita a consulta?",
