@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
+import { useState } from "react";
+import { createCheckoutSession } from "@/lib/checkout.functions";
 import {
   Stethoscope,
   Video,
@@ -140,12 +143,9 @@ function Header() {
           <a href="#como-funciona" className="hover:text-primary">Como funciona</a>
           <a href="#faq" className="hover:text-primary">Dúvidas</a>
         </nav>
-        <a
-          href="#adquirir"
-          className="rounded-full bg-gradient-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-accent transition hover:brightness-110"
-        >
+        <CheckoutButton className="rounded-full bg-gradient-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-accent transition hover:brightness-110">
           Adquirir
-        </a>
+        </CheckoutButton>
       </div>
     </header>
   );
@@ -401,12 +401,9 @@ function Pricing() {
             </ul>
           </div>
           <div className="p-8 pt-0">
-            <a
-              href="#"
-              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-4 text-base font-bold text-accent-foreground shadow-accent transition hover:brightness-110"
-            >
+            <CheckoutButton className="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-4 text-base font-bold text-accent-foreground shadow-accent transition hover:brightness-110">
               Adquirir o Clube
-            </a>
+            </CheckoutButton>
             <p className="mt-3 text-center text-xs opacity-80">Pagamento recorrente no cartão</p>
           </div>
         </div>
@@ -506,12 +503,9 @@ function FinalCTA() {
             Telemedicina ilimitada com clínico geral e 11 especialidades por apenas{" "}
             <strong className="text-accent">R$ 29,90/mês</strong>.
           </p>
-          <a
-            href="#adquirir"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-base font-bold text-accent-foreground shadow-glow transition hover:scale-[1.02] hover:brightness-110"
-          >
+          <CheckoutButton className="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-base font-bold text-accent-foreground shadow-glow transition hover:scale-[1.02] hover:brightness-110">
             Adquirir o Clube agora
-          </a>
+          </CheckoutButton>
         </div>
       </div>
     </section>
