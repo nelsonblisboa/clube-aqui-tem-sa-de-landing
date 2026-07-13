@@ -555,17 +555,27 @@ function CheckoutButton({
   const handleClick = async () => {
     if (loading) return;
     setLoading(true);
+    // Abre a aba imediatamente (dentro do gesto do usuário) para evitar bloqueio de popup
+    const newTab = window.open("about:blank", "_blank");
     try {
       const { url } = await checkout();
-      window.location.href = url;
+      if (newTab) {
+        newTab.location.href = url;
+      } else {
+        window.location.href = url;
+      }
     } catch (err) {
-      console.error(err);
+      console.error("[checkout] erro:", err);
+      if (newTab) newTab.close();
       alert(
-        "Não foi possível iniciar o checkout no momento. Tente novamente em instantes.",
+        "Não foi possível iniciar o checkout. Detalhe: " +
+          (err instanceof Error ? err.message : "erro desconhecido"),
       );
+    } finally {
       setLoading(false);
     }
   };
+
 
   return (
     <button
