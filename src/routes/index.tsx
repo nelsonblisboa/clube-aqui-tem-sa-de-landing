@@ -264,9 +264,9 @@ function Benefits() {
         {benefits.map((b) => (
           <div
             key={b.title}
-            className="group rounded-2xl border border-border bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-card"
+            className="reveal-up lift group rounded-2xl border border-border bg-card p-6 shadow-soft"
           >
-            <div className="inline-flex rounded-xl bg-primary/10 p-3 text-primary transition group-hover:bg-accent/10 group-hover:text-accent">
+            <div className="icon-pop inline-flex rounded-xl bg-primary/10 p-3 text-primary transition group-hover:bg-accent/10 group-hover:text-accent">
               <b.icon className="h-6 w-6" />
             </div>
             <h3 className="mt-4 text-lg font-semibold text-primary-dark">{b.title}</h3>
@@ -291,9 +291,9 @@ function Specialties() {
           {specialties.map((s) => (
             <div
               key={s.name}
-              className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-4 shadow-soft transition hover:border-accent/40 hover:shadow-card"
+              className="reveal-up lift flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-4 shadow-soft hover:border-accent/40"
             >
-              <div className="rounded-lg bg-accent/10 p-2 text-accent">
+              <div className="icon-pop rounded-lg bg-accent/10 p-2 text-accent">
                 <s.icon className="h-5 w-5" />
               </div>
               <span className="text-sm font-semibold text-primary-dark">{s.name}</span>
