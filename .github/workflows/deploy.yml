@@ -6,9 +6,9 @@ on:
 
 jobs:
   build:
-    NODE_OPTIONS: --no-warnings
-        
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --no-warnings
 
     steps:
     - uses: actions/checkout@v3
