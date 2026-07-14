@@ -10,9 +10,12 @@ export const createCheckoutSession = createServerFn({ method: "POST" }).handler(
       throw new Error("STRIPE_SECRET_KEY não configurada");
     }
 
+    const requestHost = getRequestHeader("host");
+    const defaultProto = requestHost?.includes("localhost") ? "http" : "https";
     const origin =
       getRequestHeader("origin") ||
-      `https://${getRequestHeader("host") ?? "clubeaquitemsaude.lovable.app"}`;
+      process.env.APP_URL ||
+      (requestHost ? `${defaultProto}://${requestHost}` : "https://clubeaquitemsaude.lovable.app");
 
     const body = new URLSearchParams();
     body.append("mode", "subscription");
